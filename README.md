@@ -1,7 +1,7 @@
-# *ENEM scores prediction using statistical models and machine learning
-###A two-stage modeling approach to simulate ENEM standardized test scores based on response patterns — using Item Response Theory, global optimization, and tree-like ML algorithm (XGBoost).
+# ENEM scores prediction using statistical models and machine learning
+A two-stage modeling approach to simulate ENEM standardized test scores based on response patterns — using Item Response Theory, global optimization, and tree-like ML algorithm (XGBoost).
 
-## *What is ENEM?
+## What is ENEM?
 ENEM (Exame Nacional do Ensino Médio) is Brazil’s national standardized test used to assess high school students' academic performance and to determine university admissions across the country. Each candidate receives four scores (Mathematics, Languages, Natural Sciences, and Human Sciences), which are not calculated from raw number of correct answers.
 Instead, ENEM uses a probabilistic scoring system called Item Response Theory (IRT/TRI) to account for:
 1) the difficulty of each question,
