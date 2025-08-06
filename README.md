@@ -58,5 +58,7 @@ This refinement boosts the predictive accuracy by accounting for ambiguity in St
 ├── README.md
 
 
-⚠️ Due to the computational cost of the optimization stage and amount of data downloaded, we recommend using a machine with good CPU performance.
+⚠️ Due to the computational cost of the optimization stage and amount of data downloaded, we recommend using a machine with good CPU performance. 
+
+[Download .zip file here] https://github.com/leticiabarbanera/practice_in_data_science_sme0852/releases/download/v1.0/Grupo.4-20250806T205116Z-1-002.zip
 
