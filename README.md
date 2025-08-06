@@ -46,6 +46,13 @@ This refinement boosts the predictive accuracy by accounting for ambiguity in St
 - Bootstrapping used for confidence intervals in Stage 1 (due to long computation time).
 - 5-fold cross-validation used in Stage 2 (XGBoost) for robustness.
 
+## Results
+The model is able to predict:
+- **99.5%** of the results correctly in Math test,
+- **99.4%** of the results correctly in Languages test,
+- **99.5%** of the results correctly in Human Sciences test,
+- **99.7%** of the results correctly in Natural Sciences test
+
 **Repository Structure**
 .
 ├── dados/              # raw data from INEP
@@ -62,4 +69,6 @@ This refinement boosts the predictive accuracy by accounting for ambiguity in St
 Otherwise, all code files can be found on this repository.
 
 [Download .zip file here] https://github.com/leticiabarbanera/practice_in_data_science_sme0852/releases/download/v1.0/Grupo.4-20250806T205116Z-1-002.zip
+
+Authors: Enzo Castelo Branco Biondi ,Julia Pravato, João Rissi Magnani, Leticia Barbanera Menezes, Murilo Lima Lirani de Carvalho 
 
