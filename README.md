@@ -10,19 +10,19 @@ Instead, ENEM uses a probabilistic scoring system called Item Response Theory (I
 
 This means two candidates with the same number of correct answers can receive very different final scores depending on which questions they got right and how consistent their answer pattern is.
 
-**Project Goal**
+## Project Goal
 This project implements a score simulator for ENEM 2023 using a two-stage modeling pipeline:
 1) A custom optimization routine that estimates candidates’ scores using Item Response Theory — by fitting logistic functions to real response patterns.
 2) A second-stage refinement using XGBoost, which incorporates uncertainty metrics from the optimization process to improve predictive accuracy.
 
-**Dataset**
+## Dataset
 We used public ENEM microdata (2019–2023) provided by INEP (Brazil’s official education data agency). Key details:
 
 - Total size: >2GB, with over 2 million records per year.
 - Initial subset: 300,000 candidates (random sample, 60k per year)
 - Final modeling subset (2023 only): 100,000 candidates, balanced across all possible score values for improved generalization; response vectors standardized to a single test version (blue version)
 
-**Modeling Pipeline**
+## Modeling Pipeline
 Stage 1: IRT-Based Score Estimation
 For each question, we fit a 3-parameter logistic model using:
 a = discrimination
@@ -41,7 +41,7 @@ We trained a gradient boosting regressor using:
 
 This refinement boosts the predictive accuracy by accounting for ambiguity in Stage 1 estimates.
 
-**Validation Strategy**
+## Validation Strategy
 - Interwoven holdout split to maximize data efficiency: 80% training (Stage 1 and 2) + 10% validation (Stage 1 hyperparams) + 10% final test set
 - Bootstrapping used for confidence intervals in Stage 1 (due to long computation time).
 - 5-fold cross-validation used in Stage 2 (XGBoost) for robustness.
